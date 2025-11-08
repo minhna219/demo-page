@@ -37,7 +37,25 @@ Vào link [này](https://pages.github.com/) rồi click chọn: User or organiza
 
 Sau đó làm theo hướng dẫn
 
-## 3. References
+### 2.3. Cách 3: Setup page với github action
+
+Chọn như hình dưới và chọn 1 workflow phù hợp
+
+hoặc dùng custom workflow, chính là file [deploy-pages.yml](deploy-pages.yml)
+
+<div align="left">
+  <img src='./0pics/gha.png' width="800">
+</div>
+
+## 3. Visibility
+
+Có thể giới hạn access cho Github page, nhưng tính năng này dành cho Github enterprise
+
+<div align="left">
+  <img src='./0pics/visible.png' width="800">
+</div>
+
+## 4. References
 
 > https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 > 

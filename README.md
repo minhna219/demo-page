@@ -2,15 +2,25 @@
 
 [GitHub Pages](https://pages.github.com/) is designed to host your personal, organization, or project pages from a GitHub repository.
 
-## 1. Lưu ý
+## 1. General
 
-- Repo phải public
 
-## 2. Steps
+
+## 2. Visibility
+
+Bình thường thì repo phải public thì mới có thể cấu hình Github Pages, và Website sẽ public đối với tất cả mọi người
+
+Tuy nhiên, có thể giới hạn access cho Github Pages, giúp cho Website chỉ có thể truy cập từ 1 số Github user nhất định, nhưng tính năng này là dành cho Github enterprise
+
+<div align="left">
+  <img src='./0pics/visible.png' width="800">
+</div>
+
+## 3. Steps đối với source là `Deploy from a branch`
 
 Dùng GitHub Pages để host web tĩnh theo 1 trong 2 cách sau
 
-### 2.1. Cách 1 (Recommended): Project site
+### 3.1. Cách 1 (Recommended): Project site
 
 Vào link [này](https://pages.github.com/) rồi click chọn: Project site > Start from scratch
 
@@ -31,13 +41,13 @@ https://minhna219.github.io/demo-page/
   <img src='./0pics/result.png' width="800">
 </div>
 
-### 2.2. Cách 2: User or organization site
+### 3.2. Cách 2: User or organization site
 
 Vào link [này](https://pages.github.com/) rồi click chọn: User or organization site
 
 Sau đó làm theo hướng dẫn
 
-### 2.3. Cách 3: Setup page với github action
+## 4. Steps đối với source là `Github actions`
 
 Chọn như hình dưới và chọn 1 workflow phù hợp
 
@@ -45,14 +55,6 @@ hoặc dùng custom workflow, chính là file [deploy-pages.yml](deploy-pages.ym
 
 <div align="left">
   <img src='./0pics/gha.png' width="800">
-</div>
-
-## 3. Visibility
-
-Có thể giới hạn access cho Github page, nhưng tính năng này dành cho Github enterprise
-
-<div align="left">
-  <img src='./0pics/visible.png' width="800">
 </div>
 
 ## 4. References

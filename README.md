@@ -53,11 +53,24 @@ Sau đó làm theo hướng dẫn
 
 Chọn như hình dưới và chọn 1 workflow phù hợp
 
-hoặc dùng custom workflow, chính là file [deploy-pages.yml](deploy-pages.yml)
-
 <div align="left">
   <img src='./0pics/gha.png' width="800">
 </div>
+
+--> Nếu Github Pages dùng Mkdocs thì sẽ dùng file [này](https://github.com/minhna219/demo-page-mkdocs/blob/main/.github/workflows/deploy-pages-mkdocs.yml) cho Github Actions bằng cách thay thế vào code trong hình dưới
+<div align="left">
+  <img src='./0pics/gha-mk1.png' width="800">
+</div>
+
+--> Có push lên nhánh `master` thì sẽ tự động chạy Github Actions và deploy lên Github Pages
+<div align="left">
+  <img src='./0pics/gha-mk2.png' width="800">
+</div>
+
+--> Xong quay trở lại màn cấu hình Github Pages thì sẽ thấy URL là:
+```
+https://minhna219.github.io/demo-page-mkdocs/
+```
 
 ## 4. References
 

@@ -4,7 +4,9 @@
 
 ## 1. General
 
-
+Có 2 loại Github Pages là:
+- `Deploy from a branch`: Deploy chính xác từ code của 1 nhánh, thường dùng với các Webiste tĩnh chạy HTML, CSS và JavaScript, ... thông thường
+- `Github Actions`: Deploy phần output từ code của 1 nhánh, thường dùng với các Webiste tĩnh chạy ReactJS, VueJS và NextJS, ... Cách này sẽ giúp người dùng giữ source code trên nhánh, và chỉ đẩy file đã build lên Webiste
 
 ## 2. Visibility
 
@@ -47,7 +49,7 @@ Vào link [này](https://pages.github.com/) rồi click chọn: User or organiza
 
 Sau đó làm theo hướng dẫn
 
-## 4. Steps đối với source là `Github actions`
+## 4. Steps đối với source là `Github Actions`
 
 Chọn như hình dưới và chọn 1 workflow phù hợp
 

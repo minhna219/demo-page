@@ -37,6 +37,8 @@ Sau đó làm theo hướng dẫn
 --> Sau đó truy cập URL:
 ```
 https://minhna219.github.io/demo-page/
+
+(tức là https://<GITHUB_USER>.github.io/<REPO_NAME>/)
 ```
 
 <div align="left">
@@ -70,9 +72,53 @@ Chọn như hình dưới và chọn 1 workflow phù hợp
 --> Xong quay trở lại màn cấu hình Github Pages thì sẽ thấy URL là:
 ```
 https://minhna219.github.io/demo-page-mkdocs/
+
+(tức là https://<GITHUB_USER>.github.io/<REPO_NAME>/)
 ```
 
-## 4. References
+## 5. Custom domain
+
+Để cấu hình custom domain cho Github Pages, ta làm như sau:
+
+Đầu tiên là tạo record trong Route 53 Hosted zone:
+- Type: `CNAME`
+- Name: `ghp.testblogforthesis.link`
+- Value: `minhna219.github.io` (`<GITHUB_USER>.github.io`)
+- TTL: `3600`
+
+<div align="left">
+  <img src='./0pics/domain1.png' width="800">
+</div>
+
+Đợi 1 lát, rồi vào trang cấu hình Github Pages, điền domain `ghp.testblogforthesis.link` và chọn "Save".
+
+Sau 1-2' sẽ hiện như dưới:
+<div align="left">
+  <img src='./0pics/domain2.png' width="800">
+</div>
+
+--> Kết quả
+<div align="left">
+  <img src='./0pics/domain3.png' width="800">
+</div>
+
+--> URL bây giờ sẽ là `https:// ghp.testblogforthesis.link`, không phải là `https://minhna219.github.io/demo-page/` nữa
+
+--> Nếu truy cập URL `https://minhna219.github.io/demo-page/` thì sẽ tự động nhảy sang URL `https:// ghp.testblogforthesis.link`
+
+Tiếp tục đợi 1 lát, rồi chọn `Enforce HTTPS`. Bằng cách này, kết nối đến domain sẽ luôn là kết nối HTTPS
+<div align="left">
+  <img src='./0pics/domain4.png' width="800">
+</div>
+
+--> Thử truy cập
+
+--> Thành công
+<div align="left">
+  <img src='./0pics/domain5.png' width="800">
+</div>
+
+## 6. References
 
 > https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 > 
